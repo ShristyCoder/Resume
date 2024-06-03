@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3; 
+    color: #111111;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #131921;
+    color: #ffffff; 
+    padding: 2rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #db9a03;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #db9a03;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fdbd25; 
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: #ffffff; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+section h2 {
+    border-bottom: 2px solid #fdbd25; 
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #111111; 
+    text-transform: uppercase;
+}
+
+.job, .school {
+    margin-bottom: 1.5rem;
+}
+
+.job h3, .school h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #111111; 
+}
+
+.job p, .school p {
+    margin: 0.2rem 0;
+    font-size: 1.1rem;
+    color: #555555; 
+}
+
+.job ul, .school ul {
+    margin: 0.5rem 0 0 1.5rem;
+}
+
+.job ul li, .school ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #db9a03; 
+    color: #ffffff; 
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #131921; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
